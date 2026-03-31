@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Owen Leiter at Web Weaver Technologies. Let's talk about your website project." />
+  <title>Contact — Web Weaver Technologies</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <div class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 8 L10 24 L16 14 L22 24 L28 8" stroke="#d4a04a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 16 L16 10 L25 16" stroke="#d4a04a" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.45"/>
+          </svg>
+        </div>
+        Web Weaver
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link">About &amp; Services</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li class="nav__cta">
+          <a href="contact.html" class="btn btn-primary">Let's Build</a>
+        </li>
+      </ul>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── PAGE HERO ──────────────────────────── -->
+  <header class="page-hero" aria-labelledby="contact-heading" style="padding-bottom:0;background:var(--bg-secondary);">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="section-label">Get in Touch</span>
+        <h1 id="contact-heading">Let's talk about<br><em>your project.</em></h1>
+        <p>
+          Tell me what you're building and I'll get back to you within 24 hours.
+          No pressure, no commitment — just a conversation.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── CONTACT SECTION ────────────────────── -->
+  <section class="contact-page" aria-label="Contact form">
+    <div class="container">
+      <div class="contact-page__inner" data-reveal>
+
+        <!-- FORM -->
+        <div>
+          <form class="contact-form" novalidate aria-label="Project inquiry form">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Jane Smith"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@yourbusiness.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="business">Business name <span style="color:var(--text-secondary);font-weight:400;">(optional)</span></label>
+              <input
+                type="text"
+                id="business"
+                name="business"
+                placeholder="Acme Co."
+                autocomplete="organization"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="project-type">Project type <span aria-hidden="true">*</span></label>
+              <select id="project-type" name="project-type" required>
+                <option value="" disabled selected>Select a package</option>
+                <option value="starter">Starter — 1–3 pages ($550)</option>
+                <option value="standard">Standard — 4–7 pages ($750)</option>
+                <option value="custom">Custom — E-commerce, databases, or complex builds</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell me about your project <span aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="What does your business do? What do you need your website to accomplish? Any specific ideas, examples, or must-haves?"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Ideal timeline <span style="color:var(--text-secondary);font-weight:400;">(optional)</span></label>
+              <select id="timeline" name="timeline">
+                <option value="" disabled selected>When do you need this live?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="week">Within the week</option>
+                <option value="month">Within the month</option>
+                <option value="flexible">I'm flexible</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="align-self:flex-start;min-width:200px;">
+              Send It
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 8h12M9 4l4 4-4 4"/>
+              </svg>
+            </button>
+
+          </form>
+        </div>
+
+        <!-- ASIDE -->
+        <aside class="contact-aside" aria-label="Contact information">
+          <span class="section-label" style="margin-bottom:1.5rem;">Prefer direct contact?</span>
+
+          <div class="contact-method">
+            <svg class="contact-method__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2 4h16v12H2z"/><polyline points="2,4 10,11 18,4"/>
+            </svg>
+            <div>
+              <h3>Email</h3>
+              <p><a href="mailto:hello@webweavertech.com">hello@webweavertech.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <svg class="contact-method__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 3a2 2 0 0 1 2-2h.5a1 1 0 0 1 1 .8l.7 3.5a1 1 0 0 1-.3 1L6 7.5s1 2.5 6.5 6.5l1.2-.9a1 1 0 0 1 1-.3l3.5.7a1 1 0 0 1 .8 1V15a2 2 0 0 1-2 2C5.4 17 3 3 3 3z"/>
+            </svg>
+            <div>
+              <h3>Phone</h3>
+              <p><a href="tel:+10000000000">(000) 000-0000</a></p>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <svg class="contact-method__icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <circle cx="10" cy="10" r="8"/>
+              <polyline points="10,6 10,10 13,12"/>
+            </svg>
+            <div>
+              <h3>Response time</h3>
+              <p>I typically respond within 24 hours — usually much faster.</p>
+            </div>
+          </div>
+
+          <div class="contact-aside__note">
+            <p>
+              Not ready to commit? That's completely fine. Reach out with questions anytime.
+              There's no hard sell here — just an honest conversation about what you need.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div style="margin-top:2rem;">
+            <p style="font-family:var(--font-mono);font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:1rem;max-width:none;">Helpful Links</p>
+            <div style="display:flex;flex-direction:column;gap:0.5rem;">
+              <a href="index.html#pricing" style="font-size:0.88rem;color:var(--text-secondary);display:flex;align-items:center;gap:0.5rem;transition:color 280ms;">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+                View pricing packages
+              </a>
+              <a href="about.html#services" style="font-size:0.88rem;color:var(--text-secondary);display:flex;align-items:center;gap:0.5rem;transition:color 280ms;">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4"/></svg>
+                See services in detail
+              </a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="margin-bottom:0.75rem;display:inline-flex;">
+            <div class="nav__logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 8 L10 24 L16 14 L22 24 L28 8" stroke="#d4a04a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 16 L16 10 L25 16" stroke="#d4a04a" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.45"/>
+              </svg>
+            </div>
+            Web Weaver Technologies
+          </a>
+          <p>Professional websites for small businesses. Fast delivery, fair pricing, full ownership.</p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Navigate</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About &amp; Services</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading">Contact</p>
+          <ul class="footer__links" role="list">
+            <li><a href="mailto:hello@webweavertech.com" class="footer__link">hello@webweavertech.com</a></li>
+            <li><a href="tel:+10000000000" class="footer__link">(000) 000-0000</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Web Weaver Technologies. Designed &amp; built by <a href="about.html">Owen Leiter</a>.</p>
+        <span class="footer__tagline">Crafted with intention.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
